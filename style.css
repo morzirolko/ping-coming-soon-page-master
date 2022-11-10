@@ -1,0 +1,116 @@
+:root{
+    --Blue: hsl(223, 87%, 63%);
+    --PaleBlue: hsl(223, 100%, 88%);
+    --LightRed: hsl(354, 100%, 66%);
+    --Gray: hsl(0, 0%, 59%);
+    --VeryDarkBlue: hsl(209, 33%, 12%);
+}
+*,::after,::before{
+    box-sizing: border-box;
+}
+@media(max-width: 475px){
+    .wrapper{
+        width: 90%;
+    }
+}
+@media(min-width:1000px) {
+    .wrapper{
+        width: 50%;
+    }
+    
+}
+body{
+    margin: 0;
+    font-size: 20px;
+    font-family: 'Libre Franklin', sans-serif;
+    text-align: center;
+}
+.wrapper{
+    margin: 10px auto 20px;
+    align-items: center;
+    text-align: center;
+}
+p{
+    margin-top: 0;
+    margin-bottom: 35px;
+}
+h1{
+    font-weight: 300;
+    color: var(--Gray);
+    margin-bottom: 15px;
+    
+}
+b{
+    color: var(--VeryDarkBlue);
+}
+img{
+    max-width: 100%;
+    margin-top: 60px;
+}
+.hidden{
+    display: none;
+}
+.NotifyMe{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+.mail{
+    padding: 18px 35px;
+    width: 71%;
+    border-radius: 25px;
+    border: 1px solid var(--PaleBlue);
+}
+.mail::placeholder{
+    color: var(--Gray);
+    opacity: 0.8;
+    font-size: 15px;
+}
+input:focus-visible{
+    outline: 1px solid var(--Blue);
+}
+
+.notify{
+    width: 27%;
+    border-radius: 25px;
+    border: 0;
+    background-color: var(--Blue);
+    transition: 0.3s;
+}
+.notify p{
+    color: white;
+    font-weight: 600;
+    margin: 0;
+    font-size: 15px;
+}
+.notify:hover{
+    opacity: 0.8;
+}
+.error{
+    border-color: var(--LightRed);
+}
+#errortext{
+    margin: 0px 30px 10px;
+    float: left;
+    color: var(--LightRed);
+    font-style: italic;
+    font-size: 14px;
+}
+.Social > *{
+    margin: 70px 15px 20px;
+    color: var(--Blue);
+    border-radius: 50%;
+    padding: 10px;
+    transition: 0.3s;
+}
+.Social > i:hover{
+    background-color: var(--Blue);
+    color: white;
+    
+}
+.Copyright{
+    color: var(--Gray);
+    font-size: 14px;
+    margin: 0px;
+}
